@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway+slab:root:wght@500&display=swap");
+
+:root {
+  --yellow-theme-background-color: #080808;
+  --yellow-theme-main-color: #ffff;
+  --yellow-theme-sub-text-color: #ffffff;
+  --yellow-theme-nav-background-color: #3e3c3c;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 65%;
+  height: 100%;
+  color: var(--yellow-theme-main-color);
+}
+
+body {
+  background: var(--yellow-theme-background-color);
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
