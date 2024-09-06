@@ -6,9 +6,9 @@
             color:var(--yellow-theme-sub-text-color);
             display: inline-block;
             font-size: 22px;
-            font-weight: 600;
+            font-weight: 600; 
             line-height: 1em;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.5px; 
             text-transform: uppercase;
             padding: 5px 20px;
             font: size 50px;
@@ -84,7 +84,7 @@
 
             &:hover{
                 color:var(--yellow-theme-sub-text-color);
-                background: var(--yellow-theme-main-color);
+                background: var(--yellow-theme-nav-background-color);
                 transition:2s ease;
             }
         }

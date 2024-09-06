@@ -68,9 +68,10 @@
         height: 350px;
         background: radial-gradient(
           190px,
-          var(--yellow-theme-main-color),
+          var(--yellow-theme-nav-background-color),
           transparent 90%
-        );
+          );
+          // var(--yellow-theme-main-color),
         position: relative;
         border-radius: 50%;
         border: 1.5px solid var(--yellow-theme-main-color);

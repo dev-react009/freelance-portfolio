@@ -19,11 +19,11 @@ const Profile = [
   },
   {
     label: "Age",
-    value: "23yrs",
+    value: "24yrs",
   },
   {
     label: "Address",
-    value: "India",
+    value: "Hyderabad",
   },
   {
     label: "Email",
@@ -33,12 +33,16 @@ const Profile = [
     label: "Mobile",
     value: "7306760872",
   },
+  {
+    label: "Git",
+    value: "https://github.com/SriramSololearner",
+  },
 ];
 
-const Summary = ` My name is Sriram Garapati 
+const Summary = `My name is Sriram Garapati 
 I have been living in kakinada a bustling city in Andhrapradesh.Which offers a thriving port, 
 Beautiful beaches.
-Iam a proud Indian.
+
 I successfully completed my MCA degree in 2023, proving my dedication and hard work
 in the field of computer Applications.
 In 2021 I successfully completed my BCA degree from AKNU University.
@@ -47,7 +51,7 @@ I have dedicated my time and efforts to a bootcamp that offers comprehensive
 training in the MERN STACK enabiling me to develop dynamic web applications from end to end.
 
 With a solid foundation in python and the MERN stack, I possess the problem solving abilities
-necessary to develop dynamic and user - friendly web applications."
+necessary to develop dynamic and user - friendly web applications.
 `;
 const About = () => {
   return (
@@ -88,6 +92,7 @@ const About = () => {
                 <li key={ind + "5"}>
                   <span className="title">{itm.label}</span>
                   <span className="value">{itm.value}</span>
+                  
                 </li>
               ))}
             </ul>
@@ -111,23 +116,33 @@ const About = () => {
               <div>
                 <DiJavascript1
                   size={50}
-                  color="var(--yellow-theme-main-color)"
+                  color="var(--Javascript-icon-color)"
                 />
               </div>
               <div>
-                <FaReact size={50} color="var(--yellow-theme-main-color)" />
+                <FaReact size={50} 
+                color="var(--React-icon-color)"
+                
+                />
               </div>
               <div>
-                <FaDatabase size={50} color="var(--yellow-theme-main-color)" />
+                <FaDatabase size={50} 
+                color="var(--yellow-theme-main-color)"
+                />
               </div>
               <div>
                 <FaGithub size={50} color="var(--yellow-theme-main-color)" />
               </div>
               <div>
-                <FaNodeJs size={50} color="var(--yellow-theme-main-color)" />
+                <FaNodeJs size={50} 
+                // color="var(--yellow-theme-main-color)"
+                  color="#339933" 
+                />
               </div>
               <div>
-                <FaPython size={50} color="var(--yellow-theme-main-color)" />{" "}
+                <FaPython size={50} 
+                  color="var(--python-icon-color)"
+                />
               </div>
             </div>
           </Animate>

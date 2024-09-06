@@ -30,17 +30,17 @@
       gap: 20px;
       padding: 2px 10px;
       font-size: 2rem;
-      font-family: "Raleway";
+      font-family: "Roboto";
       color: var(--yellow-theme-main-color);
       font-weight: 500px;
-      background-color: hsla(221, 87%, 69.8%, 0.5);
+      background-color: var(--yellow-theme-nav-background-color);
       background: transparent;
-      border: 1px solid hsla(221, 87%, 69.8%, 0.5);
+      border: 1px solid var(--yellow-theme-nav-background-color);
       cursor: pointer;
       transition: all 1s;
 
       &:hover {
-        background: hsla(221, 87%, 69.8%, 0.5);
+        background:var(--yellow-theme-nav-background-color);
         color: white;
       }
     }

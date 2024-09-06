@@ -17,7 +17,7 @@ const Skills = () => {
         <div className="Skills__content__wrapper">
             {
                 SkillsData.map((itm,i)=>(
-                    <div key={i} className="Skills__content__wrapper__innerContent">
+                    <div key={i+"ng"} className="Skills__content__wrapper__innerContent">
                         <Animate
                         play
                         duration={1}
@@ -45,9 +45,9 @@ const Skills = () => {
                                                 <Line
                                                     percent={skillsItems.percentage}
                                                     strokeWidth={2}
-                                                    strokeColor='var(--yellow-theme-main-color)'
+                                                    strokeColor='var(--yellow-theme-nav-background-color)'
                                                     trailWidth={2}
-                                                    trailColor="white"
+                                                    trailColor="  var(--yellow-theme-main-color)"
                                                     strokeLinecap="round" 
                                                 />
                                             </div>

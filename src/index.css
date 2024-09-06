@@ -1,10 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway+slab:root:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
 
 :root {
   --yellow-theme-background-color: #080808;
+  --yellow-theme-nav-link-text-color: #0d0c0c;
   --yellow-theme-main-color: #ffff;
   --yellow-theme-sub-text-color: #ffffff;
-  --yellow-theme-nav-background-color: #3e3c3c;
+  /* --yellow-theme-nav-background-color: hsla(221, 87%, 69.8%, 0.5); */
+  --yellow-theme-nav-background-color:#30039a;
+  --React-icon-color:#61DBFB;
+  --Javascript-icon-color:#F7DF1E;
+  --python-icon-color:#3776AB;
+  --database-icon-color:#47A248;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 
 * {
@@ -23,6 +33,7 @@ html {
 body {
   background: var(--yellow-theme-background-color);
   height: 100%;
+  font-family: "Roboto";
 }
 
 #root {

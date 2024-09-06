@@ -44,7 +44,7 @@ const Contact = () => {
 
   return (
     <div className="Contact">
-      <PageHeader
+      <PageHeader 
         HeaderText="Contact Me"
         Icon={<BsInfoCircleFill size={30} />}
       />
