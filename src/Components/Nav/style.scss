@@ -7,6 +7,7 @@
   font-size: 1.2rem;
   box-shadow:inset 0px 0px 8px 5px #4d04d5;
   font-family: "Roboto";
+  width:100%;
 
   &_container {
     display: flex;
@@ -68,21 +69,27 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .navbar{
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+  }
   .navbar_container__menu {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 80px;
     left: -500px;
     opacity: 1;
     transition: all 0.5s ease;
+    z-index: 100;
 
     &.active {
-      background-color: #282828;
+      background-color: #4b01d5;
       left: 0px;
-      opacity: 1;
+      border-radius:0px 0px 8px 8px;
     }
     &_itm {
       border-bottom: 1px solid #2d2d2d;

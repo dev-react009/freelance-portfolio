@@ -15,7 +15,7 @@ const Contact = () => {
 
   const form = useRef();
 
-  const handleChnageAction = (event) => {
+  const handleChangeAction = (event) => {
     const { value, name } = event.target;
     setFormData({ ...formData, [name]: value });
   };
@@ -88,7 +88,7 @@ const Contact = () => {
                   required
                   name="user_name"
                   value={formData.user_name}
-                  onChange={handleChnageAction}
+                  onChange={handleChangeAction}
                 />
                 <label htmlFor="name" className="nameLabel">
                   Name
@@ -102,7 +102,7 @@ const Contact = () => {
                   className="inputEmail"
                   value={formData.user_email}
                   required
-                  onChange={handleChnageAction}
+                  onChange={handleChangeAction}
                 />
                 <label htmlFor="email" className="emailLabel">
                   Email
@@ -118,7 +118,7 @@ const Contact = () => {
                   className="inputDesc"
                   value={formData.message}
                   required
-                  onChange={handleChnageAction}
+                  onChange={handleChangeAction}
                 />
                 <label htmlFor="desc" className="descriptionLabel">
                   description

@@ -3,13 +3,12 @@ import PageHeader from "../Pageheader";
 import { BsInfoCircleFill } from "react-icons/bs";
 import {VerticalTimeline, VerticalTimelineElement} from "react-vertical-timeline-component"
 import { data } from "./utils";
-import "react-vertical-timeline-component/style.min.css"
+import "react-vertical-timeline-component/style.min.css";
 import "./style.scss";
 import {MdWorkspacesFilled, MdWorkspacesOutline} from "react-icons/md"
 
 
 const Resume = () => {
-    
     return <div className="Resume">
         <PageHeader
             HeaderText="My Resume"
@@ -35,7 +34,6 @@ const Resume = () => {
                                 contentArrowStyle={{
                                     fill: 'var(--yellow-theme-main-color)',
                                     
-    
                                 }}
                                 icon={<MdWorkspacesOutline/>}>
                                 <div className="vertical-timeline-element-title-wrapper">
@@ -66,11 +64,9 @@ const Resume = () => {
                                     color: 'var(--yellow-theme-sub-text-color)',
                                     border: "2.5px solid var(--yellow-theme-main-color)"
                                 }}
-                
+                                
                                 contentArrowStyle={{
                                     fill: 'var(--yellow-theme-main-color)',
-
-
                                 }}
                                 icon={<MdWorkspacesFilled />}>
                                 <div className="vertical-timeline-element-title-wrapper">
@@ -85,10 +81,8 @@ const Resume = () => {
                         ))
                     }
                 </VerticalTimeline>
-
             </div>
             </div>
-
     </div>;
 };
 

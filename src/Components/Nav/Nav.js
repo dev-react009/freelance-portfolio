@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { HiX } from "react-icons/hi";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "./style.scss";
 
 const Nav = () => {
   const location = useLocation();
   const [toggleIcon, setToggleIcon] = useState(false);
-
+  const navigate = useNavigate();
   const HandleIcon = () => {
     setToggleIcon(!toggleIcon);
   };
@@ -39,6 +39,12 @@ const Nav = () => {
     },
   ];
 
+  const handleRouteChange=(link)=>{
+    // console.log(link);
+      navigate(link);
+    setToggleIcon(false);
+  }
+
   return (
     <div>
       <nav className="navbar">
@@ -56,9 +62,10 @@ const Nav = () => {
                 location.pathname === itm.to ? "active" : ""
               }`}
             >
-              <Link to={itm.to} className="navbar_container__menu_itm_links">
+              {/* <Link to={itm.to} className="navbar_container__menu_itm_links">
                 {itm.label}
-              </Link>
+              </Link> */}
+              <p className="navbar_container__menu_itm_links" onClick={()=>handleRouteChange(itm.to)}>{itm.label}</p>
             </li>
           ))}
         </ul>

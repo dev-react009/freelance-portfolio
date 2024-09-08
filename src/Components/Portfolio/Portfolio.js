@@ -2,7 +2,6 @@ import React from "react";
 import PageHeader from "../Pageheader";
 import { BsInfoCircleFill } from "react-icons/bs";
 import "./style.scss";
-import rock from "../../assets/rock-paper.png";
 import { Projects } from "../Skills/utils";
 const Portfolio = () => {
     
