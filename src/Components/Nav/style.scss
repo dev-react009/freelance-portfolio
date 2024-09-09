@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #30039a;;
+  background-color: #30039a;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -20,6 +20,10 @@
     &_logo {
       color: var(--yellow-theme-main-color);
       cursor: pointer;
+      font-size: 2.5rem;
+      padding-left:25px;
+      font-weight:bold;
+        font-family:'Raleway';
     }
 
     &__menu {
@@ -111,6 +115,7 @@
     position: fixed;
     top: 0px;
     z-index: 100;
+    height: 60px;
   }
   .navbar_container__menu {
     display: flex;
@@ -130,8 +135,11 @@
       left: 0px;
       border-radius:0px 0px 8px 8px;
       height: 100%;
+      font-weight:bold;
+      font-family:'Raleway';
     }
     &_itm {
+      font-family:'Raleway';
       border-bottom: 1px solid #2d2d2d;
       margin: 5px;
       padding: 0px 0px;
@@ -139,7 +147,10 @@
       pr:5px;
       font-weight:bold;
       background-color:white;
-
+    }
+    &_links{
+      font-weight:bold;
+      font-family:'Raleway';
     }
   }
   .nav-icon {

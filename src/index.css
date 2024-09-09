@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway+slab:root:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Sevillana&display=swap');
 
 :root {
   --yellow-theme-background-color: #080808;
@@ -33,7 +34,8 @@ html {
 body {
   background: var(--yellow-theme-background-color);
   height: 100%;
-  font-family: "Roboto";
+  /* font-family: "Roboto"; */
+  font-family:'Raleway';
 }
 
 #root {

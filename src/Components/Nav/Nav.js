@@ -46,12 +46,11 @@ const Nav = () => {
 
   return (
     <div>
-      <nav className="navbar">
+      <div className="navbar">
         <div className="navbar_container">
-          {/* <Link to={"/"} className="navbar_container_logo">
-            <FaReact size={30} />
-            Sriram Garapati
-          </Link> */}
+          <p className="navbar_container_logo">
+              Sriram
+          </p>
         </div>
         <ul className={`navbar_container__menu ${toggleIcon ? "active" : ""} `}>
           {data.map((itm, ind) => (
@@ -63,15 +62,14 @@ const Nav = () => {
             > 
             
               <p className="navbar_container__menu_itm_links" onClick={()=>handleRouteChange(itm.to)}>
-              
-                <i class="animation"></i>{itm.label}<i class="animation"></i></p>
+                {itm.label}</p>
             </li>
           ))}
         </ul>
         <div className="nav-icon" onClick={HandleIcon}>
           {toggleIcon ? <HiX size={30} /> : <FaBars size={30} />}
         </div>
-      </nav>
+      </div>
     </div>
   );
 };
