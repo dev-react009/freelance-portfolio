@@ -55,7 +55,7 @@ const Contact = () => {
           duration={1}
           delay={0}
           start={{
-            transform: "translateX(-200px)",
+            transform: "translateX(-100px)",
           }}
           end={{
             transform: "translateX(0px)",
@@ -69,7 +69,7 @@ const Contact = () => {
           duration={1}
           delay={0}
           start={{
-            transform: "translateX(300px)",
+            transform: "translateX(100px)",
           }}
           end={{
             transform: "translateX(0px)",

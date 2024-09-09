@@ -1,14 +1,15 @@
 .about {
   &__content {
     display: flex;
-    gap: 20px;
+    // gap: 20px;
     padding: 20px;
     width: 100%;
-    
+    height:100%;
 
     &__PersonalWrapper,
     &__ServicesWrapper {
       width: 50%;
+     
     }
     &__PersonalWrapper {
       h3 {
@@ -213,9 +214,12 @@
 @media only screen and (max-width: 768px) {
   .about__content {
     flex-direction: column;
+     &__ServicesWrapper{
+     }
     &__PersonalWrapper,
     &__ServicesWrapper {
       width: 100%;
+      
     }
 
     &__ServicesWrapper {

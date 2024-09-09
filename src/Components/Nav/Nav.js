@@ -40,7 +40,7 @@ const Nav = () => {
   ];
 
   const handleRouteChange=(link)=>{
-    // console.log(link);
+    console.log(link);
       navigate(link);
     setToggleIcon(false);
   }
@@ -57,7 +57,7 @@ const Nav = () => {
         <ul className={`navbar_container__menu ${toggleIcon ? "active" : ""} `}>
           {data.map((itm, ind) => (
             <li
-              key={ind}
+              key={ind+"hello"}
               className={`navbar_container__menu_itm ${
                 location.pathname === itm.to ? "active" : ""
               }`}

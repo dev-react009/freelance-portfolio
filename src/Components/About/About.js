@@ -57,7 +57,7 @@ const About = () => {
 
       <div className="about__content">
         <div className="about__content__PersonalWrapper">
-          <Animate
+          {/* <Animate
             play
             duration={1.5}
             delay={0.5}
@@ -67,33 +67,34 @@ const About = () => {
             end={{
               transform: "translateX(0px)",
             }}
-          >
+          > */}
             <h3>SoftwareDeveloper</h3>
             <p>{Summary}</p>
-          </Animate>
+          {/* </Animate> */}
 
-          <Animate
+          {/* <Animate
             play
             duration={0.9}
             delay={2.5}
             start={{
-              transform: "translateX(2000px)",
+              transform: "translateX(200px)",
             }}
             end={{
               transform: "translateX(0px)",
             }}
-          >
+          > */}
             <h3 className="PersonalInfoHeader">PersonalDetails</h3>
             <ul>
               {Profile.map((itm, ind) => (
                 <li key={ind + "5"}>
                   <span className="title">{itm.label}</span>
                   <span className="value">{itm.value}</span>
-                  
+
                 </li>
               ))}
             </ul>
-            <div class="card">
+
+            {/* <div class="card">
 
               <a class="socialContainer containerThree" href="https://www.linkedin.com/in/sriram-g-67a2001a4" target="_blank" rel="noreferrer" >
                 <svg viewBox="0 0 448 512" class="socialSvg linkedinSvg">
@@ -132,16 +133,16 @@ const About = () => {
                     d="M8 0a8 8 0 0 0-2.53 15.6c.4.07.55-.17.55-.38v-1.39c-2.23.48-2.69-1.08-2.69-1.08-.36-.91-.88-1.15-.88-1.15-.72-.49.05-.48.05-.48.8.05 1.23.82 1.23.82.71 1.21 1.87.86 2.33.66.07-.52.28-.86.51-1.06-1.78-.2-3.65-.89-3.65-3.96 0-.87.31-1.58.82-2.13-.08-.2-.36-1.01.08-2.11 0 0 .67-.22 2.2.82a7.64 7.64 0 0 1 2-.27c.68 0 1.35.09 2 .27 1.52-1.04 2.2-.82 2.2-.82.44 1.1.16 1.91.08 2.11.51.55.82 1.26.82 2.13 0 3.08-1.88 3.76-3.66 3.96.29.25.55.73.55 1.48v2.19c0 .21.14.46.56.38A8 8 0 0 0 8 0z"
                   ></path>
                 </svg>
-              </a> 
+              </a>
 
-              
-            </div>
-          </Animate>
+
+            </div> */}
+          {/* </Animate> */}
 
           {/*  FaReact, FaNodeJs, FaDatabase, FaGithub ,FaPython*/}
         </div>
         <div className="about__content__ServicesWrapper">
-          <Animate
+          {/* <Animate
             play
             duration={1.9}
             delay={2}
@@ -151,7 +152,7 @@ const About = () => {
             end={{
               transform: "translateX(0px)",
             }}
-          >
+          > */}
             <div className="about__content__ServicesWrapper__innerCont">
               <div>
                 <DiJavascript1
@@ -160,32 +161,32 @@ const About = () => {
                 />
               </div>
               <div>
-                <FaReact size={50} 
-                color="var(--React-icon-color)"
-                
+                <FaReact size={50}
+                  color="var(--React-icon-color)"
+
                 />
               </div>
               <div>
-                <FaDatabase size={50} 
-                color="var(--yellow-theme-main-color)"
+                <FaDatabase size={50}
+                  color="var(--yellow-theme-main-color)"
                 />
               </div>
               <div>
                 <FaGithub size={50} color="var(--yellow-theme-main-color)" />
               </div>
               <div>
-                <FaNodeJs size={50} 
-                  color="#339933" 
+                <FaNodeJs size={50}
+                  color="#339933"
                 />
               </div>
               <div>
-                <FaPython size={50} 
+                <FaPython size={50}
                   color="var(--python-icon-color)"
                 />
               </div>
             </div>
-          
-          </Animate>
+
+          {/* </Animate> */}
         </div>
       </div>
     </div>

@@ -19,7 +19,7 @@ const App = () => {
   return (
     <div className="App">
       <ToastContainer />
-      <Nav />
+      <Nav /> 
       {/* PArticles js */}
       {/* <Particle id="particles" init={handelInit}/> */}
       {renderHomePage && <Particle />}

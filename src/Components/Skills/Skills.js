@@ -16,8 +16,8 @@ const Skills = () => {
         />
         <div className="Skills__content__wrapper">
             {
-                SkillsData.map((itm,i)=>(
-                    <div key={i+"ng"} className="Skills__content__wrapper__innerContent">
+                SkillsData.map((itm,index)=>(
+                    <div key={index+"ng"} className="Skills__content__wrapper__innerContent">
                         <Animate
                         play
                         duration={1}
