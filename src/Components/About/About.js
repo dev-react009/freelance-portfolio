@@ -94,7 +94,7 @@ const About = () => {
               ))}
             </ul>
 
-            {/* <div class="card">
+             <div class="card">
 
               <a class="socialContainer containerThree" href="https://www.linkedin.com/in/sriram-g-67a2001a4" target="_blank" rel="noreferrer" >
                 <svg viewBox="0 0 448 512" class="socialSvg linkedinSvg">
@@ -136,7 +136,7 @@ const About = () => {
               </a>
 
 
-            </div> */}
+            </div>
           {/* </Animate> */}
 
           {/*  FaReact, FaNodeJs, FaDatabase, FaGithub ,FaPython*/}

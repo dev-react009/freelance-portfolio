@@ -60,9 +60,11 @@ const Nav = () => {
               className={`navbar_container__menu_itm ${
                 location.pathname === itm.to ? "active" : ""
               }`}
-            >
+            > 
             
-              <p className="navbar_container__menu_itm_links" onClick={()=>handleRouteChange(itm.to)}>{itm.label}</p>
+              <p className="navbar_container__menu_itm_links" onClick={()=>handleRouteChange(itm.to)}>
+              
+                <i class="animation"></i>{itm.label}<i class="animation"></i></p>
             </li>
           ))}
         </ul>

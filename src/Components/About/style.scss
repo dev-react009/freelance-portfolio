@@ -73,7 +73,7 @@
           var(--yellow-theme-nav-background-color),
           transparent 90%
           );
-          // var(--yellow-theme-main-color),
+        
         position: relative;
         border-radius: 50%;
         border: 1.5px solid var(--yellow-theme-main-color);
@@ -214,8 +214,8 @@
 @media only screen and (max-width: 768px) {
   .about__content {
     flex-direction: column;
-     &__ServicesWrapper{
-     }
+    &__ServicesWrapper{
+    }
     &__PersonalWrapper,
     &__ServicesWrapper {
       width: 100%;
