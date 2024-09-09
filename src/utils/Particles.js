@@ -145,7 +145,7 @@ const Particle = () => {
               },
               onHover: {
                 enable: true,
-                mode: "trail",
+                mode: "bubble",
                 parallax: {
                   enable: false,
                   force: 2,
@@ -161,7 +161,7 @@ const Particle = () => {
               trail: {
                 delay: 0.005,
                 pauseOnStop: true,
-                quantity: 5,
+                quantity:1 ,
                 particles: {
                   color: {
                     value: "#ff0000",
@@ -244,7 +244,7 @@ const Particle = () => {
                 quantity: 2,
               },
               repulse: {
-                distance: 200,
+                distance: 80,
                 duration: 0.4,
                 factor: 100,
                 speed: 1,
@@ -637,6 +637,8 @@ const Particle = () => {
             },
           },
         }}
+      
+
       />
     </div>
   );

@@ -40,7 +40,6 @@ const Nav = () => {
   ];
 
   const handleRouteChange=(link)=>{
-    console.log(link);
       navigate(link);
     setToggleIcon(false);
   }
@@ -62,9 +61,7 @@ const Nav = () => {
                 location.pathname === itm.to ? "active" : ""
               }`}
             >
-              {/* <Link to={itm.to} className="navbar_container__menu_itm_links">
-                {itm.label}
-              </Link> */}
+            
               <p className="navbar_container__menu_itm_links" onClick={()=>handleRouteChange(itm.to)}>{itm.label}</p>
             </li>
           ))}

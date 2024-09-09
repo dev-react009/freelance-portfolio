@@ -50,86 +50,90 @@ const Contact = () => {
       />
 
       <div className="Contact__content">
-        <Animate
-          play
-          duration={1}
-          delay={0}
-          start={{
-            transform: "translateX(-100px)",
-          }}
-          end={{
-            transform: "translateX(0px)",
-          }}
-        >
-          <h3 className="Contact__content__header-text">Let's Talk</h3>
-        </Animate>
-
-        <Animate
-          play
-          duration={1}
-          delay={0}
-          start={{
-            transform: "translateX(100px)",
-          }}
-          end={{
-            transform: "translateX(0px)",
-          }}
-        >
-          <form
-            ref={form}
-            onSubmit={handleSubmit}
-            className="Contact__content__Form"
+        <div className="animate-wrapper">
+          <Animate
+            play
+            duration={1}
+            delay={0}
+            start={{
+              transform: "translateX(-100px)",
+            }}
+            end={{
+              transform: "translateX(0px)",
+            }}
           >
-            <div className="Contact__content__Form__ControlsWrapper">
-              <div className="NameWrapper">
-                <input
-                  type="text"
-                  className="inputName"
-                  required
-                  name="user_name"
-                  value={formData.user_name}
-                  onChange={handleChangeAction}
-                />
-                <label htmlFor="name" className="nameLabel">
-                  Name
-                </label>
-              </div>
+            <h3 className="Contact__content__header-text">Let's Talk</h3>
+          </Animate>
 
-              <div className="EmailWrapper">
-                <input
-                  type="email"
-                  name="user_email"
-                  className="inputEmail"
-                  value={formData.user_email}
-                  required
-                  onChange={handleChangeAction}
-                />
-                <label htmlFor="email" className="emailLabel">
-                  Email
-                </label>
-              </div>
+      </div>
+        <div className="animate-wrapper">
+          <Animate
+            play
+            duration={1}
+            delay={0}
+            start={{
+              transform: "translateX(80px)",
+            }}
+            end={{
+              transform: "translateX(0px)",
+            }}
+          >
+            <form
+              ref={form}
+              onSubmit={handleSubmit}
+              className="Contact__content__Form"
+            >
+              <div className="Contact__content__Form__ControlsWrapper">
+                <div className="NameWrapper">
+                  <input
+                    type="text"
+                    className="inputName"
+                    required
+                    name="user_name"
+                    value={formData.user_name}
+                    onChange={handleChangeAction}
+                  />
+                  <label htmlFor="name" className="nameLabel">
+                    Name
+                  </label>
+                </div>
 
-              <div className="DescWrapper">
-                <textarea
-                  rows={5}
-                  cols={25}
-                  type="description"
-                  name="message"
-                  className="inputDesc"
-                  value={formData.message}
-                  required
-                  onChange={handleChangeAction}
-                />
-                <label htmlFor="desc" className="descriptionLabel">
-                  description
-                </label>
+                <div className="EmailWrapper">
+                  <input
+                    type="email"
+                    name="user_email"
+                    className="inputEmail"
+                    value={formData.user_email}
+                    required
+                    onChange={handleChangeAction}
+                  />
+                  <label htmlFor="email" className="emailLabel">
+                    Email
+                  </label>
+                </div>
+
+                <div className="DescWrapper">
+                  <textarea
+                    rows={5}
+                    cols={25}
+                    type="description"
+                    name="message"
+                    className="inputDesc"
+                    value={formData.message}
+                    required
+                    onChange={handleChangeAction}
+                  />
+                  <label htmlFor="desc" className="descriptionLabel">
+                    description
+                  </label>
+                </div>
               </div>
-            </div>
-            <button type="submit" value="Send">
-              Submit
-            </button>
-          </form>
-        </Animate>
+              <button type="submit" value="Send">
+                Submit
+              </button>
+            </form>
+          </Animate>
+        </div>
       </div>
     </div>
   );
