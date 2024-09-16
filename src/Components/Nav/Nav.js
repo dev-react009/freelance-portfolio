@@ -45,7 +45,7 @@ const Nav = () => {
   }
 
   return (
-    <div>
+    <>
       <div className="navbar">
         <div className="navbar_container">
           <p className="navbar_container_logo">
@@ -70,7 +70,7 @@ const Nav = () => {
           {toggleIcon ? <HiX size={30} /> : <FaBars size={30} />}
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

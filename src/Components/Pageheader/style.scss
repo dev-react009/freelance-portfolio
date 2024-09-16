@@ -11,7 +11,7 @@
         line-height:1rem;
         text-transform: capitalize;
         color:var(--yellow-theme-main-color);
-        display: flex;
+        display: flex; 
         flex-grow: 1;
         
     }
@@ -23,5 +23,6 @@
 @media only screen and (max-width: 768px){
     .wrapper{
         border:0;
+        display:none;
     }
 }

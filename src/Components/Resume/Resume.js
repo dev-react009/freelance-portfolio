@@ -8,6 +8,7 @@ import "./style.scss";
 import {MdWorkspacesFilled, MdWorkspacesOutline} from "react-icons/md"
 
 
+
 const Resume = () => {
     return <div className="Resume">
         <PageHeader

@@ -9,7 +9,7 @@ const Portfolio = () => {
         <PageHeader
             HeaderText="My Projects"
             Icon={<BsInfoCircleFill size={30} />} />
-        <div className="project-list">
+        <div className="project-list"> 
             {Projects.map((project, index) => (
                 <div className="project-card" key={index}>
                     <img

@@ -11,7 +11,7 @@ const Contact = () => {
     user_name: "",
     user_email: "",
     message: "",
-  });
+  }); 
 
   const form = useRef();
 
