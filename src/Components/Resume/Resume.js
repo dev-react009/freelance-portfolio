@@ -16,6 +16,50 @@ const Resume = () => {
             Icon={<BsInfoCircleFill size={30} />} 
             />
             <div className="timeline">
+                <div className="timeline__Training">
+    <h3 className="timeline__Training__header-text">Freelance</h3>
+    <VerticalTimeline
+        layout="1-column"
+        lineColor="var(--yellow-theme-main-color)"
+    >
+        {
+            data.freelance.map((itm, i) => (
+                <VerticalTimelineElement
+                    key={i}
+                    className="timeline__Training__vertical-timeline-element"
+                    contentStyle={{
+                        background: "none",
+                        color: 'var(--yellow-theme-sub-text-color)',
+                        border: "2.5px solid var(--yellow-theme-main-color)"
+                    }}
+                    contentArrowStyle={{
+                        fill: 'var(--yellow-theme-main-color)'
+                    }}
+                    icon={<MdWorkspacesOutline />}
+                >
+                    <div className="vertical-timeline-element-title-wrapper">
+                        <h2 className="vertical-timeline-element-title">{itm.title}</h2>
+                        <h4 className="vertical-timeline-element-title-subtitle">{itm.clientName}</h4>
+                        <p className="vertical-timeline-element-title-Duration">{itm.duration}</p>
+                        <p className="vertical-timeline-element-title-Duration">{itm.description}</p>
+                        {/* <ul>
+                            {itm.responsibilities.map((res, idx) => (
+                                <li key={idx}>{res}</li>
+                            ))}
+                        </ul>
+                        <strong>Achievements:</strong>
+                        <ul>
+                            {itm.achievements.map((ach, idx) => (
+                                <li key={idx}>{ach}</li>
+                            ))}
+                        </ul> */}
+                    </div>
+                </VerticalTimelineElement>
+            ))
+        }
+    </VerticalTimeline>
+</div>
+
             <div className="timeline__Training">
                 <h3 className="timeline__Training__header-text">Experience</h3>
 

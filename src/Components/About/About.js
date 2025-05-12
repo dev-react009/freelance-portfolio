@@ -18,11 +18,7 @@ const Profile = [
     value: "Sriram",
   },
   {
-    label: "Age",
-    value: "24yrs",
-  },
-  {
-    label: "Address",
+    label: "Location",
     value: "Hyderabad",
   },
   
@@ -36,20 +32,14 @@ const Profile = [
   // },
 ];
 
-const Summary = `My name is Sriram Garapati 
-I have been living in kakinada a bustling city in Andhra Pradesh.Which offers a thriving port, 
-Beautiful beaches.
+const Summary = `Hi, I'm Sriram Garapati — a passionate full-stack developer based in Hyderabad, India. Known for its tech ecosystem and vibrant culture, the city fuels my drive to build impactful digital products.
 
-I successfully completed my MCA degree in 2023, proving my dedication and hard work
-in the field of computer Applications.
-In 2021 I successfully completed my BCA degree from AKNU University.
+I hold an MCA degree (2023) and a BCA degree (2021) from AKNU University, which laid a strong academic foundation for my journey into software development.
 
-I have dedicated my time and efforts to a bootcamp that offers comprehensive
-training in the MERN STACK enabiling me to develop dynamic web applications from end to end.
+I’ve completed a hands-on, project-based bootcamp focused on the MERN Stack (MongoDB, Express.js, React, Node.js), where I built several end-to-end applications solving real-world problems.
 
-With a solid foundation in python and the MERN stack, I possess the problem solving abilities
-necessary to develop dynamic and user - friendly web applications.
-`;
+As a freelance developer, I help startups and founders turn ideas into scalable, production-ready apps. With a solid foundation in Python and the MERN stack, I bring a blend of logic, creativity, and technical skill — delivering clean code, smooth user experiences, and results that matter.`;
+
 const About = () => {
   return (
     <div className="about">
@@ -96,14 +86,14 @@ const About = () => {
 
              <div class="card">
 
-              <a class="socialContainer containerThree" href="https://www.linkedin.com/in/sriram-g-67a2001a4" target="_blank" rel="noreferrer" >
+              <a class="socialContainer containerThree" href="https://www.linkedin.com/in/garapati-sriram-0943ba358/" target="_blank" rel="noreferrer" >
                 <svg viewBox="0 0 448 512" class="socialSvg linkedinSvg">
                   <path
                     d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
                   ></path>
                 </svg>
               </a>
-              <a class="socialContainer containerFour" href="mailto:sriram.gsr16@gmail.com">
+              <a class="socialContainer containerFour" href="mailto:sriramgarapati16@gmail.com">
                 <svg
                   viewBox="0 0 16 16"
                   fill="currentColor"
