@@ -15,7 +15,7 @@ const Home = () => {
         <h1>
           Hello, I'm Sriram Garapati
           <br />
-          Software Developer
+          Freelance Developer
         </h1>
         <Animate
           play
